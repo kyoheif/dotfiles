@@ -67,7 +67,7 @@ case ${OSTYPE} in
 esac
 
 # invoke tmux when zsh is invoked
-if [ "$TMUX" = "" ]; then
+if [ "$TMUX" = "" ] && [[ $TERM_PROGRAM != "vscode" ]] ; then
 	tmux attach;
 	if [ $? ]; then
 		tmux;
