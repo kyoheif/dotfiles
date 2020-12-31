@@ -1,4 +1,6 @@
-GNORE_PATTERN="^\.(git|travis)"
+#!/bin/bash -e
+
+IGNORE_PATTERN="^\.(git|travis)"
 
 echo "Create dotfile links."
 for dotfile in .??*; do
